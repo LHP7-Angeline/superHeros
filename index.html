@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Héros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header class="contenant">
+        <img src="assets/img/banner-marvel2.jpg" class="img-fluid" alt="bannière Marvel">
+        <h1>LEAGUE OF HEROES</h1>
+    </header>
+
+    <nav class="nav sticky-top d-flex justify-content-evenly mb-5">
+        <a class="navbar-brand" href="#">Accueil</a>
+        <a class="navbar-brand" href="#">Profil</a>
+        <a class="navbar-brand" href="#">Galerie</a>
+    </nav>
+
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col col-lg-5 text-center mb-2 d-none d-lg-block">
+                <h2 class="pb-1">Spider-man</h2>
+                <img src="assets/img/spiderman3.jpg" class="img-fluid mb-3" alt="spiderman">
+                <p>Peter Parker</p>
+                <p>Projection de toiles</p>
+                <p>Photographe</p>
+            </div>
+
+            <div class="col col-lg-6">
+                <h2 class="text-center pb-1">Liste des super-héros</h2>
+                <table class="table table-dark table-striped table-borderless table-hover">
+                    
+                    <tbody>
+                        <tr>
+                            <td><img src="assets/img/ironman.jpg" class="pict" alt=""></td>
+                            <td>Iron man</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#iron">
+                                    <i class="bi bi-plus-square-fill fs-4"></i>
+                                </button>
+                            </td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center" id="iron" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Iron Man</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/tony.jpg" alt="">
+                                            <p>Tony Stark</p>
+                                            <p>Armure d'acier</p>
+                                            <p>PDG de Stark Industries</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/img/captain-america2.jpg" class="pict" alt=""></td>
+                            <td>Captain America</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#capt">
+                                <i class="bi bi-plus-square-fill fs-4"></i>
+                            </button></td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center m-auto" id="capt" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Captain America</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/captain2.jpg" alt="">
+                                            <p>Steven Rogers</p>
+                                            <p>Condition physique surdéveloppée</p>
+                                            <p>Militaire</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/img/groot2.jpg" class="pict" alt="groot"></td>
+                            <td>Groot</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#groot">
+                                <i class="bi bi-plus-square-fill fs-4"></i>
+                            </button></td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center m-auto" id="groot" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Groot</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/groot3.jpg" alt="">
+                                            <p>Je s'appelle groot</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/img/capmarvel.jpg" class="pict" alt="capmarv"></td>
+                            <td>Captain Marvel</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#capmarv">
+                                <i class="bi bi-plus-square-fill fs-4"></i>
+                            </button></td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center m-auto" id="capmarv" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Groot</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/capmarvel2.jpg" alt="">
+                                            <p>Carol Danvers</p>
+                                            <p>Pouvoirs cosmiques</p>
+                                            <p></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/img/deadpool.jpg" class="pict" alt="Deadpool"></td>
+                            <td>Deadpool</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#deadpool">
+                                <i class="bi bi-plus-square-fill fs-4"></i>
+                            </button></td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center m-auto" id="deadpool" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Deadpool</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/deadpool2.jpg" alt="Deadpool">
+                                            <p>Wade Wilson</p>
+                                            <p>Guérison</p>
+                                            <p>Homme de main</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/img/thor.jpg" class="pict" alt="thor"></td>
+                            <td>Thor</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#thor">
+                                <i class="bi bi-plus-square-fill fs-4"></i>
+                            </button></td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center m-auto" id="thor" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Groot</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/thor2.jpg" alt="">
+                                            <p>Thor Odinson</p>
+                                            <p>Force surhumaine</p>
+                                            <p>Dieu du tonnerre</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/img/antman.jpg" class="pict" alt="antman"></td>
+                            <td>Ant-Man</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#antman">
+                                <i class="bi bi-plus-square-fill fs-4"></i>
+                            </button></td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center m-auto" id="antman" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Ant-Man</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/antman2.jpg" alt="">
+                                            <p>Scott Lang</p>
+                                            <p>Rétrécissement</p>
+                                            <p>Criminel</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/img/hulk.jpg" class="pict" alt="hulk"></td>
+                            <td>Hulk</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#hulk">
+                                <i class="bi bi-plus-square-fill fs-4"></i>
+                            </button></td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center m-auto" id="hulk" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Hulk</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/hulk2.jpg" alt="hulk">
+                                            <p>Bruce Banner</p>
+                                            <p>Force</p>
+                                            <p>Physicien nucléaire</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/img/rocket.jpg" class="pict" alt="rocket"></td>
+                            <td>Rocket</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#rocket">
+                                <i class="bi bi-plus-square-fill fs-4"></i>
+                            </button></td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center m-auto" id="rocket" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Rocket</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/rocket2.jpg" alt="">
+                                            <p>Rocket Raccoon</p>
+                                            <p>Raton laveur</p>
+                                            <p>Ranger</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/img/panther.jpg" class="pict" alt="Black Panther"></td>
+                            <td>Black Panther</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#panther">
+                                <i class="bi bi-plus-square-fill fs-4"></i>
+                            </button></td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center m-auto" id="panther" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Black Panther</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/panther2.jpg" alt="Black Panther">
+                                            <p>T'Challa</p>
+                                            <p>Force et agilité accrues</p>
+                                            <p>Roi du Wakanda</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/img/strange.jpg" class="pict" alt="Docteur Strange"></td>
+                            <td>Docteur Strange</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#strange">
+                                <i class="bi bi-plus-square-fill fs-4"></i>
+                            </button></td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center m-auto" id="strange" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Docteur Strange</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/strange2.jpg" alt="Docteur Strange">
+                                            <p>Stephen Strange</p>
+                                            <p>Magicien</p>
+                                            <p>Neurochirurgien</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr class="d-lg-none">
+                            <td><img src="assets/img/spiderman3.jpg" class="pict" alt="Spider-man"></td>
+                            <td>Spider-man</td>
+                            <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#spider">
+                                <i class="bi bi-plus-square-fill fs-4"></i>
+                            </button></td>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-center m-auto" id="spider" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fw-bold m-auto">Spider-man</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="picmod mb-2" src="assets/img/spider2.jpg" alt="Spider-man">
+                                            <p>Peter Parker</p>
+                                            <p>Projection de toiles</p>
+                                            <p>Photographe</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn m-auto close" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="d-flex align-items-center">
+        <p class="text-center m-auto copy">© 2021 League of Heroes</p>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

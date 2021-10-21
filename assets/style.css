@@ -1,0 +1,133 @@
+:root{
+    /* --pal1-blue: #273469;
+    --pal1-grey: #A99F96;
+    --pal1-red: #94192E; */
+    /* --pal2-bord: #440B0A; */
+    /* --pal2-orange: #AA6846; */
+    /* --pal2-orange: #9f3514;
+    --pal2-white: #F4F8FE;
+    --pal2-blue: #404666;
+    --pal2-bfonce: #2a314e;
+    --pal2-dark: #2b2a33; */
+
+    --theme: #2b2a33;
+    --object:#440B0A;
+    --font: #F4F8FE;
+    --font2: #404666;
+    --title: 'Bebas Neue', cursive;
+    --text: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background-color: var(--theme);
+    font-family: var(--text);
+}
+
+nav{
+    background-color: var(--object);
+    font-family: var(--title);
+    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+}
+
+.contenant{
+    position: relative;
+    text-align: center;
+}
+
+h1{
+    font-family: var(--title);
+    color: var(--object);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+}
+
+.navbar-brand{
+    color: var(--font);
+}
+
+.navbar-brand:hover{
+    color: var(--font2);
+}
+
+.navbar-brand:focus{
+    color: var(--font2);
+}
+
+h2{
+    font-family: var(--title);
+    color: var(--font);
+    font-weight: bold;
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
+}
+
+p{
+    font-family: var(--text);
+    color: var(--font);
+    font-size: 1.2rem;
+}
+
+caption{
+    caption-side: top;
+    font-family: var(--title);
+    font-size: 1.8rem;
+    color: var(--font);
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.pict{
+    width: 4rem;
+}
+
+td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+i{
+    color: var(--font);
+}
+
+.modal-content{
+    background-color: var(--object);
+}
+
+.modal-title{
+    color: var(--font);
+}
+
+.picmod{
+    width: 18rem;
+}
+
+.close{
+    color: var(--theme);
+    background-color: var(--font);
+    border: none;
+}
+
+.close:hover{
+    color: var(--object);
+}
+
+footer{
+    background-color: var(--object);
+    height: 4rem;
+}
+
+.copy{
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:830px){
+    h1{
+        font-size: 2.2rem;
+    }
+}
